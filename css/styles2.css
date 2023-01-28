@@ -85,7 +85,7 @@ p{
 }
 .products{
     padding-top: 5rem;
-    margin: 3rem;
+    margin: 3%;
 }
 .products .container .box img{
     padding:2rem;
@@ -98,14 +98,14 @@ p{
 }
 .features{
     padding-top: 5rem;
-    margin: 3rem;
+    margin: 3%;
 }
 .features .container .box img{
     padding-top: 10%;
     height: 60%;
 } 
 .contacts{
-    margin:3rem;
+    margin:3%;
 }
 .contacts .box{
     height: 15rem;
