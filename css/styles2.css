@@ -30,7 +30,7 @@ p{
     width: 80rem;
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     gap:1.5rem;
 }
 .btn{
@@ -85,6 +85,7 @@ p{
 }
 .products{
     padding-top: 5rem;
+    margin: 3rem;
 }
 .products .container .box img{
     padding:2rem;
@@ -97,13 +98,14 @@ p{
 }
 .features{
     padding-top: 5rem;
+    margin: 3rem;
 }
 .features .container .box img{
     padding-top: 10%;
     height: 60%;
 } 
 .contacts{
-    margin-top:2rem;
+    margin:3rem;
 }
 .contacts .box{
     height: 15rem;
