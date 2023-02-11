@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    max-height: 100%;
     max-width: 100%;
     border: none;
     text-decoration: none;
@@ -19,6 +20,7 @@ p{
 }
 .box{
     height: 20rem;
+    width: 60rem;
     border: 0.2rem solid #3882F6;
     border-radius: 0.5rem;
     text-align: center;
@@ -27,11 +29,8 @@ p{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
 }
 .container{
-    width: 80rem;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    gap:1.5rem;
+    margin: 4rem;
+    display: flex;
 }
 .btn{
     display: inline-block;
@@ -39,36 +38,34 @@ p{
     border: 0.2rem solid #F9FAF8;
     border-radius: 0.5rem;
     color:#F9FAF8;
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 6%;
 }
 .header{
     position: fixed;
     top:0; left: 0; right:0;    
     background:#1F2937;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 10%;
 }
 .header .logo{
     font-size: 24px;
     color:#F9FAF8;
-    padding: 0 10%;
     line-height: 4rem;
 } 
-.header .navbar ul{
+.header .navbar{
+    float: right;
     display: flex;
-    margin-right: 1rem;
     list-style: none;
 }
-.header .navbar ul li{
+.header .navbar li{
+    float: right;
     line-height: 4rem;
 }
-.header .navbar ul li a{
+.header .navbar li a{
     font-size: 18px;
     margin: 0 1rem;
     color:#E5E7EB;
 }
-.header .navbar ul li a.active, .header .navbar ul li a:hover{
+.header .navbar li a.active, .header .navbar li a:hover{
     background: #3882F6;
     transition: .5s;
     border-radius: .5rem;
@@ -88,8 +85,12 @@ p{
     margin: 3%;
 }
 .products .container .box img{
-    padding:2rem;
-    height: 60%;
+    height: 10rem;
+    width: 10rem;
+}
+.products .container .box figcaption{
+    font-size: 1rem;
+    font-weight: 700;
 }
 .products .container .box div{
     font-size: 2vh;
@@ -105,7 +106,7 @@ p{
     height: 60%;
 } 
 .contacts{
-    margin:3%;
+    margin:9%;
 }
 .contacts .box{
     height: 15rem;
@@ -119,6 +120,17 @@ p{
 .contacts .box a:hover{
     color:#3882F6;
 }
+@media(max-width:1080px){ 
+    .box{
+        height: 20rem;
+        width: 60rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap:1.5rem;
+    }
+}
 @media(max-width:820px){ 
     p{
         font-size: 1.7vh;
@@ -127,7 +139,7 @@ p{
     .header .menu-btn i{
         display: block;
     }
-    .header .navbar ul {
+    .header .navbar{
         position:absolute;
         top:100%; right:-5%;
         height: 15rem;
@@ -135,11 +147,11 @@ p{
         background:#1F2937;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,1); 
     }
-    .header .navbar ul{
+    .header .navbar{
         display:block;
         text-align: center;
     }
-    .header .navbar ul li a.active, .header .navbar ul li a:hover{
+    .header .navbar li a.active, .header .navbar li a:hover{
         background: none;
         color: #3882F6;
     }

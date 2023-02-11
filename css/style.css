@@ -11,39 +11,37 @@
     position: fixed;
     top:0; left: 0; right:0;    
     background:#1F2937;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 9%;
+    line-height: 4rem;
 }
 .header .logo{
     font-size: 24px;
     color:#F9FAF8;
-    padding: 0 10%;
-    line-height: 4rem;
 } 
-.header .navbar ul{
+.header .navbar{
+    float: right;
     display: flex;
-    margin-right: 1rem;
     list-style: none;
 }
-.header .navbar ul li{
-    line-height: 4rem;
-}
-.header .navbar ul li a{
+.header .navbar li a{
     font-size: 18px;
     margin: 0 1rem;
     color:#E5E7EB;
 }
-.header .navbar ul li a.active, .header .navbar ul li a:hover{
+.header .navbar li a.active, .header .navbar li a:hover{
     background: #3882F6;
     transition: .5s;
     border-radius: .5rem;
     padding: 1rem;
 }
+.header .menu-btn{
+    float: right;
+    margin: 1rem;
+    line-height: 2rem;
+}
 .header .menu-btn i{
-    font-size: 18px;
+    font-size: 16px;
     color:#E5E7EB;
-    margin-right: 7rem;
     border-radius: 4.5rem;
     background: #3882F6;
     padding: 1rem; 
@@ -52,7 +50,7 @@
 .home{
     height: 20rem;
     background:#1F2937;
-    padding: 5rem 6.5% 0 10%;
+    padding: 5rem 6.5% 0 9%;
     display: flex;
     justify-content: space-between;
 }
@@ -74,12 +72,13 @@
     width: 5rem;
 }
 .home .image img{
-    width: 100%;
+    width: 90%;
     max-height: 100%;
     padding-left: 2rem;
 }
 .categories{
-    margin-top: 2rem; 
+    margin-top: 2rem;
+    padding: 0 9%; 
 }
 .categories h1{
     color:#1F2937;
@@ -95,6 +94,7 @@
 }
 .categories .categories-contanier .box{
     height:15rem;
+    min-width: 20%;
     border: 0.2rem solid #3882F6;
     border-radius: 0.5rem;
     text-align: center;
@@ -154,19 +154,17 @@
     .header .menu-btn i{
         display:block;
     }
-    .header .navbar ul {
+    .header .navbar{
         position:absolute;
         top:100%; right:-5%;
         height: 15rem;
         width: 20rem;
         background:#1F2937;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,1); 
-    }
-    .header .navbar ul{
         display:block;
         text-align: center;
     }
-    .header .navbar ul li a.active, .header .navbar ul li a:hover{
+    .header .navbar li a.active, .header .navbar li a:hover{
         background: none;
         color: #3882F6;
     }
